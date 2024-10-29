@@ -1,11 +1,18 @@
+html {
+    font: 16px Roboto, Arial, sans-serif;
+}
+
 body {
     padding: 25px;
     background-color: white;
     color: black;
-    font-size: 25px;
-  }
-  
-  .dark-mode {
-    background-color: black;
-    color: white;
-  }
+}
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+#bubuh {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
