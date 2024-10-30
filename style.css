@@ -9,11 +9,23 @@ body {
     color: black;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
+a {
+    color: #000;
+}
 body.dark-mode {
     background-color: #000;
     color: #fff;
 }
 body.dark-mode #mode-toggle {
+    color: #fff;
+}
+body.dark-mode a {
+    color: #fff;
+}
+body.dark-mode h1 {
+    color: #fff;
+}
+body.dark-mode h3 {
     color: #fff;
 }
 
