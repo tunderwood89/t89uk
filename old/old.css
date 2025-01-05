@@ -1,0 +1,99 @@
+html {
+    font: 16px Roboto, Arial, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+a {
+    color: #000;
+    transition: color 0.5s ease;
+}
+svg {
+    width: 20px;
+    height: 20px;
+}
+body.dark-mode {
+    background-color: #1b1b1b;
+    color: #fff;
+}
+body.dark-mode #mode-toggle {
+    color: #fff;
+}
+body.dark-mode a {
+    color: #fff;
+    transition: color 0.5s ease;
+}
+body.dark-mode h1 {
+    color: #fff;
+}
+body.dark-mode h3 {
+    color: #fff;
+}
+
+#mode-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.5s ease;
+    align-items: end;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 15px;
+    border-radius: 50px;
+    transition: border-color 0.5s ease;
+}
+.header-left {
+    display: flex; 
+    align-items: center;
+    gap: 15px; 
+    height: 75px;
+}
+h1 {
+    font-weight: 600;
+}
+#bubuh {
+    width: inherit;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.main {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.summary {
+    display: flex;
+    align-items: center;
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+}
+h3 {
+    font-weight: 500;
+    line-height: 0.5;
+}
+
+@media (min-width: 570px) {
+    body {
+        padding: 15px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 571px) {
+    body {
+        width: auto;
+        padding: 15px;
+        margin-top: 0;
+    }
+}
