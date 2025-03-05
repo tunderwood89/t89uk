@@ -1,0 +1,64 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: Inter, sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.logo-header {
+    width: 300px;
+    padding: 10px;
+}
+
+.tagline {
+    padding-left: 22.5px;
+    margin: 0%;
+}
+
+.buttons {
+    padding-left: 22.5px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    border: 2px white solid;
+    transform: skew(-8deg);
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Ensure the link behaves like a block element */
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.button:hover::before {
+    width: 100%;
+}
+
+.button:hover .button-text {
+    color: black; /* Change text color to black on hover */
+}
+
+.button-text {
+    display: inline-block;
+    transform: skew(8deg);
+    transition: color 0.3s ease-in-out; /* Add transition to the text */
+}
