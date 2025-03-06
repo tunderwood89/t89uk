@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleButtons(id) {
+            const buttons = document.getElementById(id);
+            const arrow = document.getElementById(id + "-arrow");
+            if (buttons.style.display === "none" || buttons.style.display === "") {
+                buttons.style.display = "flex";
+                arrow.textContent = "▼";
+            } else {
+                buttons.style.display = "none";
+                arrow.textContent = "▶";
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="heading">
@@ -27,8 +40,10 @@
     <h1 class="tagline">We produce the highest variety of YouTube videos on the planet.</h1>
 
     <div class="strip">
-        <h2 class="explainers">tunderwood89</h2>
-        <div class="heading-button-strip">
+        <h2 class="explainers" onclick="toggleButtons('tunderwood89-buttons')">
+            <span id="tunderwood89-buttons-arrow">▶</span> tunderwood89
+        </h2>
+        <div class="heading-button-strip" id="tunderwood89-buttons" style="display: none;">
             <div class="heading-buttons">
                 <a href="https://youtube.com/@tunderwood89" class="heading-button">
                     <span class="heading-button-text">YouTube</span>
@@ -47,8 +62,10 @@
     </div>
 
     <div class="strip">
-        <h2 class="explainers">the g-man</h2>
-        <div class="heading-button-strip">
+        <h2 class="explainers" onclick="toggleButtons('thegman-buttons')">
+            <span id="thegman-buttons-arrow">▶</span> the g-man
+        </h2>
+        <div class="heading-button-strip" id="thegman-buttons" style="display: none;">
             <div class="heading-buttons">
                 <a href="https://youtube.com/@thegmanclips" class="heading-button">
                     <span class="heading-button-text">YouTube</span>
@@ -64,8 +81,10 @@
     </div>
 
     <div class="strip">
-        <h2 class="explainers">sudden apparition</h2>
-        <div class="heading-button-strip">
+        <h2 class="explainers" onclick="toggleButtons('suddenapparition-buttons')">
+            <span id="suddenapparition-buttons-arrow">▶</span> sudden apparition
+        </h2>
+        <div class="heading-button-strip" id="suddenapparition-buttons" style="display: none;">
             <div class="heading-buttons">
                 <a href="https://www.youtube.com/@sudden-apparition" class="heading-button">
                     <span class="heading-button-text">YouTube</span>
