@@ -1,3 +1,1 @@
-My site (yay!)
-
-The old version can be accessed here!
+The 22Media website, home of the internet's best content creator.
