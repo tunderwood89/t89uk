@@ -1,27 +1,17 @@
-/*
-* LittleLink
-* https://littlelink.io
-* Free to use under the MIT license
-* http://www.opensource.org/licenses/mit-license.php
-*/
 
-/* Base Typography Settings
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
 	font-size:16px;
 }
 
-/* Grid
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .container {
 	position:relative;
 	width:100%;
-	max-width:37.5rem;     				/* 600px */
+	max-width:37.5rem;
     text-align:center;
 	margin:0 auto;
 	padding:3rem 1.25rem 0 1.25rem;
 	box-sizing:border-box;
-	overflow: hidden; /* Add overflow hidden */
+	overflow: hidden;
 }
 .container-left {
 	position:relative;
@@ -33,24 +23,23 @@
 	box-sizing:border-box;
 }
 .container-left p {
-	margin-bottom: 1rem;  				/* 16px space between paragraphs */
+	margin-bottom: 1rem;
   }
 .column {
-	position:relative; /* Fix position value */
+	position:relative;
 	width:100%;
-	float:none; /* Fix float value */
+	float:none;
 	box-sizing:border-box;
-	overflow: hidden; /* Add overflow hidden */
+	overflow: hidden;
 }
-/* For devices larger than 400px */
-  @media (min-width:25rem) {            /* 400px */
+  @media (min-width:25rem) {
     .container {
 	width:85%;
 	padding-left:0;
 	padding-right:0;
 }
-}/* For devices larger than 550px */
-  @media (min-width:34.375rem) {        /* 550px */
+}
+  @media (min-width:34.375rem) {
     .container {
 	width:80%;
 }
@@ -62,64 +51,55 @@
 }
 }
 
-/* Base Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   body {
 	margin:0;
 	padding:0;
 	color:#1a1a1a;
 	font-family:"Open Sans",system-ui;
-	font-size:1.125rem;     				/* 18px */
+	font-size:1.125rem;
     font-weight:400;
 	line-height:1.6;
 	background: url('../bg.png') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     width: 100vw;
-	overflow-x: hidden; /* Hide horizontal scrollbar */
+	overflow-x: hidden;
 }
 
-/* Typography
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   h1 {
 	margin:0 0 0.5rem 0;
-	font-size:3rem;         		/* 48px */
+	font-size:3rem;
     font-weight:800;
 	line-height:1;
 	letter-spacing:0;
 	word-wrap:break-word;
 	overflow-wrap:break-word;
-	hyphens:auto;           		/* Delete this to remove automatic hyphen on line break */
+	hyphens:auto;
 }
 .container p {
 	margin:0 0 2rem 0;
 }
 
-/* Base Typography Settings
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Base size - 16px browser default */
 :root {
-  font-size:16px;           /* Using a 1.25 modular scale for typography */
-  --scale-0:1rem;           /* 16px */
-  --scale-1:1.25rem;        /* 20px */
-  --scale-2:1.563rem;       /* 25px */
-  --scale-3:1.953rem;       /* 31px */
-  --scale-4:2.441rem;       /* 39px */
-  --scale-5:3.052rem;       /* 49px */
+  font-size:16px;
+  --scale-0:1rem;
+  --scale-1:1.25rem;
+  --scale-2:1.563rem;
+  --scale-3:1.953rem;
+  --scale-4:2.441rem;
+  --scale-5:3.052rem;
   
-  /* Spacing units */
-  --spacing-xs:0.5rem;      /* 8px */
-  --spacing-s:1rem;         /* 16px */
-  --spacing-m:1.5rem;       /* 24px */
-  --spacing-l:0.5rem;         /* 32px */
-  --spacing-xl:3rem;        /* 48px */
-  --spacing-xxl:4rem;       /* 64px */
+  --spacing-xs:0.5rem;
+  --spacing-s:1rem;
+  --spacing-m:1.5rem;
+  --spacing-l:0.5rem;
+  --spacing-xl:3rem;
+  --spacing-xxl:4rem;
 }
 
-/* Avatar */
 .avatar {
-	width: 24rem; /* Fix width value */
-	height: 24rem; /* Fix height value */
+	width: 24rem;
+	height: 24rem;
 	border-radius: 50%;
 	object-fit: cover;
 	background-position: center;
@@ -129,10 +109,9 @@
 	display: block;
   }
 
-/* Typography Scale */
 h1 {
 	margin:0 0 var(--spacing-m) 0;
-	font-size:var(--scale-5);           /* ~49px */
+	font-size:var(--scale-5);
   	font-weight:800;
 	line-height:1.1;
 	letter-spacing:-0.02em;
@@ -140,7 +119,7 @@ h1 {
 	overflow-wrap:break-word;
 }
 body {
-	font-size:var(--scale-1);           /* 20px */
+	font-size:var(--scale-1);
   	line-height:1.6;
 }
 .container p {
@@ -149,20 +128,17 @@ body {
 	line-height:1.6;
 }
 
-/* Container spacing */
 .container {
 	padding:var(--spacing-xl) var(--spacing-m) 0 var(--spacing-m);
 	text-align:center;
 }
 
-/* Footer */
 footer {
-	margin:var(--spacing-xxl) 0;            /* 4rem (64px) top and bottom */
+	margin:var(--spacing-xxl) 0;
     font-size:var(--scale-0);
 }
 
-/* Responsive adjustments */
-@media (max-width:34.375rem) {              /* 550px */
+@media (max-width:34.375rem) {
   h1 {
 	font-size:var(--scale-4);
 }
@@ -176,12 +152,10 @@ body {
 	margin-bottom:var(--spacing-m);
 }
 footer {
-	margin:var(--spacing-xl) 0;         	/* 3rem (48px) top and bottom */
+	margin:var(--spacing-xl) 0;
 }
 }
 
-/* Links
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   a {
 	color:#2457F5;
 	text-decoration:underline;
@@ -190,16 +164,14 @@ a:hover {
 	color:#083BDA;
 }
 
-/* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,button {
 	display:inline-flex;
 	align-items:center;
 	justify-content:center;
-	width:18.75rem;             	/* 300px */
- 	min-height:3rem;                /* 48px */
-  	padding:0.75rem 1rem;         	/* 12px ; 16px */
-  	font-size:1.125rem;           	/* 18px */
+	width:18.75rem;
+ 	min-height:3rem;
+  	padding:0.75rem 1rem;
+  	font-size:1.125rem;
   	font-weight:700;
 	text-decoration:none;
 	white-space:normal;
@@ -209,14 +181,12 @@ a:hover {
 	border-radius:0.5rem;
 	cursor:pointer;
 	box-sizing:border-box;
-	hyphens:auto;               	/* Delete this to remove automatic hyphen on line break */
+	hyphens:auto;
   	margin-bottom:1rem;
 	text-align:center;
 	line-height:1.3;
 }
 
-/* Icons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon {
 	width:1.25rem;
 	height:1.25rem;
@@ -224,11 +194,9 @@ a:hover {
 	flex-shrink:0;
 }
 
-/* Avatar
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .avatar {
-	width: 24rem; /* Fix width value */
-	height: 24rem; /* Fix height value */
+	width: 24rem;
+	height: 24rem;
 	border-radius: 50%;
 	object-fit: cover;
 	background-position: center;
@@ -238,26 +206,19 @@ a:hover {
 	display: block;
   }
 
-   /* Modifier for no avatar rounding */
    .avatar--none {
 	border-radius: 0%;
   }
 
-  /* Modifier for rounded avatar */
   .avatar--rounded {
 	border-radius: 50%;
   }
   
-  /* Modifier for slightly rounded corners */
   .avatar--soft {
-	border-radius: 0.5rem;   /* 8px rounded corners */
+	border-radius: 0.5rem;
   }
 
-/* Theme System
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Light theme is default above */
   
-/* Dark theme */
 :root.theme-dark {
 	color-scheme:dark;
 }
@@ -275,7 +236,6 @@ a:hover {
 	color:#7AB8FF;
 }
 
-/* Auto theme */
 :root.theme-auto {
 	color-scheme:light dark;
 }
@@ -295,25 +255,19 @@ a:hover {
 }
 }
 
-/* Button Text Color Override
-    –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .button:hover,button:hover {
 	color:var(--button-text);
 }
 
-/* Responsive Typography
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  @media (max-width:34.375rem) {            /* 550px */
+  @media (max-width:34.375rem) {
     h1 {
-	font-size:2rem;                         /* 32px */
+	font-size:2rem;
 	}
 	body {
-	font-size:1rem;                    		/* 16px */
+	font-size:1rem;
 	}
 }
 
-/* Privacy Page Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {
 	margin:var(--spacing-l) 0;
 	text-align:left;
@@ -341,7 +295,6 @@ ul li {
 	margin-bottom:var(--spacing-xs);
 }
 
-/* Privacy page specific responsive adjustments */
   @media (max-width:34.375rem) {
 	h2 {
 	font-size:var(--scale-2);
@@ -354,8 +307,6 @@ ul li {
 	}
 }
 
-/* Font Face Definitions
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @font-face {
 	font-display:swap;
 	font-family:'Open Sans';
