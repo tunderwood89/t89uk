@@ -352,6 +352,12 @@
 	--button-border:1px solid #FFFFFF;
 }
 
+/* Modrinth */
+.button-modrinth {
+    --button-text: #f8f8f8;
+    --button-background: #16181c;
+}
+
 /* Microsoft */
 .button-microsoft {
 	--button-text:#ffffff;
